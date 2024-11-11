@@ -1,0 +1,14 @@
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\bin\Debug\net8.0\CalculatorApp.exe
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\bin\Debug\net8.0\CalculatorApp.deps.json
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\bin\Debug\net8.0\CalculatorApp.runtimeconfig.json
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\bin\Debug\net8.0\CalculatorApp.dll
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\bin\Debug\net8.0\CalculatorApp.pdb
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.AssemblyInfoInputs.cache
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.AssemblyInfo.cs
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.dll
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\refint\CalculatorApp.dll
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.pdb
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\CalculatorApp.genruntimeconfig.cache
+C:\Users\chevy\Documents\C# learning program\CalculatorApp\obj\Debug\net8.0\ref\CalculatorApp.dll
