@@ -24,27 +24,27 @@ namespace CalculatorApp
                 return;
             }
 
-            Console.Write("Choose an operation (+, -, *, /, ^ for power, r for square root, m to store to memory, mr to reccall from memory): ");
-            char operation = Console.ReadLine()[0];
+            Console.Write("Choose an operation (+, -, *, /, ^ for power, r for square root, m to store to memory, mr to recall from memory): ");
+            string operation = Console.ReadLine();
 
             double result = 0;
             bool validOperation = true;
 
             switch (operation)
             {
-                case '+':
+                case "+":
                 result = num1 + num2;
                 break;
 
-                case '-':
+                case "-":
                 result = num1 - num2;
                 break;
 
-                case '*':
+                case "*":
                 result = num1 * num2;
                 break;
 
-                case '/':
+                case "/":
                 if (num2 != 0)
                 result = num1 / num2;
                 else
@@ -54,11 +54,11 @@ namespace CalculatorApp
                 }
                 break;
 
-                case '^':
+                case "^":
                 result = Math.Pow(num1, num2); // Power Calculation
                 break;
 
-                case 'r':
+                case "r":
                 if (num1 != 0)
                 result = Math.Sqrt(num1); // Square Root
                 else
@@ -68,13 +68,13 @@ namespace CalculatorApp
                 }
                 break;
 
-                case 'm': // Store the result in memory
+                case "m": // Store the result in memory
                 memory = result;
                 Console.WriteLine($"Stored {result} in memory.");
                 validOperation = false; // Don't print result as it's just a memory operation
                 break;
 
-                case 'mr:' // Recall the memory value
+                case "mr": // Recall the memory value
                 result = memory;
                 Console.WriteLine($"Recalled {memory} from memory.");
                 validOperation = false;
