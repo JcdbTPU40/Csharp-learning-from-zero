@@ -25,7 +25,7 @@ namespace CalculatorApp
             }
 
             Console.Write("Choose an operation (+, -, *, /, ^ for power, r for square root, m to store to memory, mr to recall from memory): ");
-            string operation = Console.ReadLine();
+            string operation = Console.ReadLine() ?? string.Empty;
 
             double result = 0;
             bool validOperation = true;
