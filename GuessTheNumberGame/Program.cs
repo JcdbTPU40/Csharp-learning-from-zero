@@ -6,37 +6,95 @@ namespace GuessTheNumberGame
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
-            int targetNumber = random.Next(1, 101); // Generate a number between 1 and 100
+            bool playAgain = true;
 
-            bool guessedCorrectly = false;
-            while (!guessedCorrectly)
+            while (playAgain)
             {
-                Console.WriteLine("Guess the number between 1 and 100: ");
-                string userInput = Console.ReadLine();
-                int userGuess;
+                Random random = new Random();
+                int targetNumber = 0;   // Initialize to a default value
+                int maxGuesses = 0;     // Initialize to a default value
+                int maxNumber = 0;      // Initialize to a defalut value
+                int guessCount = 0;     // Initialize guess counter
 
-                if(int.TryParse(userInput, out userGuess))
-                {
+                // Choose difficulty level
 
-                if (userGuess > targetNumber)
+                bool validDifficulty = false;
+                while (!validDifficulty)
                 {
-                    Console.Write("Too High!");
+                    Console.WriteLine("Choose a difficulty level: Easy, Medium, Hard");
+                    string difficulty = Console.ReadLine().ToLower();
+
+                    if (difficulty == "easy")
+                    {
+                        targetNumber = random.Next(1, 51);
+                        maxGuesses = 15;
+                        maxNumber = 50;
+                        validDifficulty = true;
+                    }
+                    else if (difficulty == "medium")
+                    {
+                        targetNumber = random.Next(1, 101);
+                        maxGuesses = 10;
+                        maxNumber = 100;
+                        validDifficulty = true;
+                    }
+                    else if(difficulty == "hard")
+                    {
+                        targetNumber = random.Next(1,201);
+                        maxGuesses = 5;
+                        maxNumber = 200;
+                        validDifficulty = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid choice. Please enter 'Easy', 'Medium', or 'Hard'.");
+                    }
                 }
-                else if (userGuess < targetNumber)
+
+                bool guessedCorrectly = false;
+
+                while (!guessedCorrectly && guessCount < maxGuesses)
                 {
-                    Console.WriteLine("Too Low!");
+                    Console.WriteLine($"Guess the number between 1 and {maxNumber}: ");
+                    string userInput = Console.ReadLine();
+                    int userGuess;
+
+                    if(int.TryParse(userInput, out userGuess))
+                    {
+
+                        if (userGuess > targetNumber)
+                        {
+                            Console.WriteLine("Too High!");
+                        }
+                        else if (userGuess < targetNumber)
+                        {
+                            Console.WriteLine("Too Low!");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Congratulations! You guessed the number in {guessCount} attempts.");
+                            guessedCorrectly = true;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please enter a valid number.");
+                    }
+
+                    guessCount++;
+
+                    if(guessCount == maxGuesses && !guessedCorrectly)
+                    {
+                        Console.WriteLine("Sorry! You've reached the maximum number of guesses.");
+                        Console.WriteLine($"The correct number was: {targetNumber}");
+                    }
+
                 }
-                else
-                {
-                    Console.WriteLine("Congratulations! You guessed the number.");
-                    guessedCorrectly = true;
-                }
-                }
-                else
-                {
-                    Console.WriteLine("Please enter a valid number.");
-                }
+
+                Console.WriteLine("Would you like to play again? (yes/no)");
+                string response = Console.ReadLine().ToLower();
+
+                playAgain = response == "yes";
             }
         }
     }
