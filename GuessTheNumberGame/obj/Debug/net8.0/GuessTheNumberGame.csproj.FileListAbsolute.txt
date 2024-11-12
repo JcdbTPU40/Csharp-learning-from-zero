@@ -1,0 +1,15 @@
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.AssemblyInfoInputs.cache
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.AssemblyInfo.cs
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.csproj.CoreCompileInputs.cache
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.sourcelink.json
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\bin\Debug\net8.0\GuessTheNumberGame.exe
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\bin\Debug\net8.0\GuessTheNumberGame.deps.json
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\bin\Debug\net8.0\GuessTheNumberGame.runtimeconfig.json
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\bin\Debug\net8.0\GuessTheNumberGame.dll
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\bin\Debug\net8.0\GuessTheNumberGame.pdb
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.dll
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\refint\GuessTheNumberGame.dll
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.pdb
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\GuessTheNumberGame.genruntimeconfig.cache
+C:\Users\chevy\Documents\C# learning program\GuessTheNumberGame\obj\Debug\net8.0\ref\GuessTheNumberGame.dll
